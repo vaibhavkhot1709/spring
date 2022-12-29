@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="company" class="com.spring.project.collection.Company"
+		autowire="byType">
+		<property name="name" value="Pwo_Wings"></property>
+	</bean>
+
+	<bean name="employee"
+		class="com.spring.project.collection.Employee">
+		<property name="id" value="1111"></property>
+		<property name="name" value="Pramod dada"></property>
+		<property name="age" value="30"></property>
+		<property name="mobile_no">
+			<list>
+				<value>12345</value>
+				<value>26422</value>
+				<value>26422</value>
+				<value>26422</value>
+				<value>387545</value>
+
+			</list>
+		</property>
+		<property name="vehicles">
+			<set>
+				<value> two_whiler</value>
+				<value> four_whiler</value>
+				<value> two_whiler</value>
+				<value> two_whiler</value>
+				<value> four_whiler</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean name="department"
+		class="com.spring.project.collection.Department">
+		<property name="dept_name" value="IT"></property>
+		<property name="dept_id" value="009"></property>
+
+	</bean>
+
+</beans>

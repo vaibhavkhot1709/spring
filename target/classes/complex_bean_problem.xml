@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="garden" class="com.spring.project.complex_bean_problem.Garden" autowire="byType" scope="singleton">
+
+</bean>
+
+<bean name="flower" class="com.spring.project.complex_bean_problem.Flower" scope="prototype">
+<property name="flr_id" value="101"></property>
+<property name="flr_name" value="Lotus"></property>
+<property name="flr_price" value="1001"></property>
+</bean>
+
+<bean name="fruit" class="com.spring.project.complex_bean_problem.Fruit">
+<property name="frt_id" value="901"></property>
+<property name="frt_name" value="Mango"></property>
+<property name="frt_price" value="1200"></property>
+</bean>
+
+
+
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="Car" class="com.spring.project.CBP_solution.Car" autowire="byType" scope="singleton">
+<lookup-method name="createEngine" bean="engine"/>
+
+</bean>
+
+<bean name="engine" class="com.spring.project.CBP_solution.Engine" scope="prototype">
+<property name="type" value="CC"></property>
+<property name="capacity" value="10"></property>
+</bean>
+
+
+</beans>

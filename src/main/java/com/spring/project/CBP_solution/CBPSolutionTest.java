@@ -12,9 +12,11 @@ public class CBPSolutionTest {
 		
 		Car c2=ctx.getBean("Car",Car.class);
 	
+		System.out.println(c1.getEngine());
+		
 		System.out.println(c1==c2);
 		
-		System.out.println(c1.engine==c2.engine);
+		System.out.println(c1.getEngine()==c2.getEngine());
 		
 		
 		

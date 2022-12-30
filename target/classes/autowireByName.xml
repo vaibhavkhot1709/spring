@@ -6,25 +6,35 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean name="byname"
-		class="com.spring.project.autowire_byName.ByName" autowire="byName">
+		class="com.spring.project.autowire_byName.ByName" autowire="byType">
 		<property name="roll" value="0009"></property>
 		<property name="name" value="Shree"></property>
 	</bean>
 
-	<bean name="adBN"
+	<bean name="aBN"
 		class="com.spring.project.autowire_byName.AddressByName">
 		<property name="pin" value="1234"></property>
 		<property name="name" value="Pune"></property>
 	</bean>
 
-	<bean name="addN"
+	<!-- <bean name="addN"
 		class="com.spring.project.autowire_byName.AddressByName">
 		<property name="pin" value="1234"></property>
 		<property name="name" value="Pune"></property>
+	</bean> -->
+	
+	<bean name="coun" class="com.spring.project.autowire_byName.Country">
+	<property name="state_no" value="28"></property>
+	<property name="name" value="IND"></property>
+	
 	</bean>
 
 
-
+<!-- 	<bean name="oun" class="com.spring.project.autowire_byName.Country">
+	<property name="state_no" value="28"></property>
+	<property name="name" value="IND"></property>
+	
+	</bean> -->
 
 
 

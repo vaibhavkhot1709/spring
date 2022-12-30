@@ -6,6 +6,8 @@ public class ByName {
 	String name;
 	
 	AddressByName addBN;
+	
+	Country country;
 
 	public int getRoll() {
 		return roll;
@@ -30,14 +32,19 @@ public class ByName {
 	public void setAddBN(AddressByName addBN) {
 		this.addBN = addBN;
 	}
+	
+	public Country getCountry() {
+		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
+	}
 
 	@Override
 	public String toString() {
-		return "ByName [roll=" + roll + ", name=" + name + ", addBN=" + addBN + "]";
+		return "ByName [roll=" + roll + ", name=" + name + ", addBN=" + addBN + ", country=" + country + "]";
 	}
-	
-	
-	
-	
+
 
 }

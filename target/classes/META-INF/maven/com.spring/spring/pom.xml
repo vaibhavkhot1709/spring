@@ -3,7 +3,6 @@
 	<groupId>com.spring</groupId>
 	<artifactId>spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
@@ -11,20 +10,32 @@
 			<artifactId>spring-core</artifactId>
 			<version>5.3.20</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
 			<version>5.3.20</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>5.3.20</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/aspectj/aspectjrt -->
+		<dependency>
+			<groupId>aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.5.4</version>
+		</dependency>
 	</dependencies>
+
 </project>

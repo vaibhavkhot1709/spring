@@ -5,17 +5,19 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean name="person" class="com.spring.project.ConstructorDI.Person" autowire="constructor">
-<constructor-arg name="age" value="26"></constructor-arg>
-<constructor-arg name="name" value="Vaibhav"></constructor-arg>
-</bean>
+	<bean name="person"
+		class="com.spring.project.ConstructorDI.Person" autowire="constructor">
+		<constructor-arg name="age" value="26"></constructor-arg>
+		<constructor-arg name="name" value="Vaibhav"></constructor-arg>
+	</bean>
 
-<bean name="adress" class="com.spring.project.ConstructorDI.Address">
-<constructor-arg name="city" value="Pune"></constructor-arg>
-<constructor-arg name="country" value="IND"></constructor-arg>
-<constructor-arg name="pin" value="1234"></constructor-arg>
+	<bean name="adress"
+		class="com.spring.project.ConstructorDI.Address">
+		<constructor-arg name="city" value="Pune"></constructor-arg>
+		<constructor-arg name="country" value="IND"></constructor-arg>
+		<constructor-arg name="pin" value="1234"></constructor-arg>
 
-</bean>
+	</bean>
 
 
 
